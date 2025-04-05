@@ -28,4 +28,6 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # What is the name of lowest paid person (including benefits)?
 # print(salaries_dataframe[salaries_dataframe['TotalPayBenefits'] == salaries_dataframe['TotalPayBenefits'].min()].to_string())
 
-# What was the average (mean) BasePay of all employees per year? (2011-2014) ?
+# What was the average (mean) BasePay of all employees per year? (2011-2014)
+for year in range(2011,2015):
+    print(f"{year}    {salaries_dataframe[salaries_dataframe['Year']==year]['BasePay'].mean()}")
