@@ -35,5 +35,9 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # print(salaries_dataframe['JobTitle'].nunique())
 
 # What are the top 5 most common jobs?
-print(salaries_dataframe['JobTitle'].unique())
-print(salaries_dataframe['JobTitle'].value_counts().head())
+# print(salaries_dataframe['JobTitle'].unique())
+# print(salaries_dataframe['JobTitle'].value_counts().head())
+
+# How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)
+job_titles_value_counts = salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts()
+print(job_titles_value_counts[job_titles_value_counts==1].sum())
