@@ -1,2 +1,23 @@
 import pandas as pd
+import numpy as np
+
+salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
+# head: shows the first n data. the default value is 5
+# print(salaries_dataframe.head().to_string())
+
+# info will give you the information about the dataframe
+# print(salaries_dataframe.info())
+
+# mean in a column
+# print(salaries_dataframe['BasePay'].mean())
+
+
+# What is the highest amount of OvertimePay in the dataset ?
+# print(salaries_dataframe['OvertimePay'].max())
+
+# 'JOSEPH DRISCOLL' Job title
+# print(salaries_dataframe[salaries_dataframe['EmployeeName']=='JOSEPH DRISCOLL']['JobTitle'])
+
+
+
 
