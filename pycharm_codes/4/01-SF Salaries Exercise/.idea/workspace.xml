@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the questions:&#10;# What is the name of highest paid person (including benefits)?&#10;# What is the name of lowest paid person (including benefits)?">
+    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the questions:&#10;What was the average (mean) BasePay of all employees per year? (2011-2014)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,13 +119,22 @@
       <option name="project" value="LOCAL" />
       <updated>1743887442118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Answering the questions:&#10;What was the average (mean) BasePay of all employees per year? (2011-2014)">
+      <option name="closed" value="true" />
+      <created>1743887828173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743887828173</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deleting and starting over because of the Pycharm stupid behaviour" />
     <MESSAGE value="Answering the question: What is the job title of JOSEPH DRISCOLL?" />
     <MESSAGE value="Answering the questions:&#10;# What is the name of highest paid person (including benefits)?&#10;# What is the name of lowest paid person (including benefits)?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Answering the questions:&#10;# What is the name of highest paid person (including benefits)?&#10;# What is the name of lowest paid person (including benefits)?" />
+    <MESSAGE value="Answering the questions:&#10;What was the average (mean) BasePay of all employees per year? (2011-2014)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Answering the questions:&#10;What was the average (mean) BasePay of all employees per year? (2011-2014)" />
   </component>
 </project>

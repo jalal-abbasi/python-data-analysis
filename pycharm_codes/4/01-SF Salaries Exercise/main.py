@@ -11,7 +11,6 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # mean in a column
 # print(salaries_dataframe['BasePay'].mean())
 
-
 # What is the highest amount of OvertimePay in the dataset ?
 # print(salaries_dataframe['OvertimePay'].max())
 
@@ -29,5 +28,12 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # print(salaries_dataframe[salaries_dataframe['TotalPayBenefits'] == salaries_dataframe['TotalPayBenefits'].min()].to_string())
 
 # What was the average (mean) BasePay of all employees per year? (2011-2014)
-for year in range(2011,2015):
-    print(f"{year}    {salaries_dataframe[salaries_dataframe['Year']==year]['BasePay'].mean()}")
+# for year in range(2011,2015):
+#     print(f"{year}    {salaries_dataframe[salaries_dataframe['Year']==year]['BasePay'].mean()}")
+
+# How many unique job titles are there?
+# print(salaries_dataframe['JobTitle'].nunique())
+
+# What are the top 5 most common jobs?
+print(salaries_dataframe['JobTitle'].unique())
+print(salaries_dataframe['JobTitle'].value_counts().head())
