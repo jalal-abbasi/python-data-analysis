@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="deleting and starting over because of the Pycharm stupid behaviour">
-      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/03-DataFrames.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/03-DataFrames.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/04-Missing Data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/04-Missing Data.ipynb" afterDir="false" />
+    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the question: What is the job title of JOSEPH DRISCOLL?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Salaries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Salaries.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,11 +103,20 @@
       <option name="project" value="LOCAL" />
       <updated>1743772582029</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Answering the question: What is the job title of JOSEPH DRISCOLL?">
+      <option name="closed" value="true" />
+      <created>1743883217936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743883217936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deleting and starting over because of the Pycharm stupid behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleting and starting over because of the Pycharm stupid behaviour" />
+    <MESSAGE value="Answering the question: What is the job title of JOSEPH DRISCOLL?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Answering the question: What is the job title of JOSEPH DRISCOLL?" />
   </component>
 </project>
