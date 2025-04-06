@@ -36,7 +36,10 @@ print("\n ===================================================================== 
 # print(ecom['Job'].value_counts().head(n=5))
 
 # Someone made a purchase that came from Lot: "90 WT" , what was the Purchase Price for this transaction?
-print(ecom[ecom['Lot']=='90 WT']['Purchase Price'])
+# print(ecom[ecom['Lot']=='90 WT']['Purchase Price'])
+
+# What is the email of the person with the following Credit Card Number: 4926535242672853
+print(ecom[ecom['Credit Card']==4926535242672853]['Email'])
 
 
 
