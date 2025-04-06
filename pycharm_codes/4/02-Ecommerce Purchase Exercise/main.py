@@ -47,7 +47,12 @@ print("\n ===================================================================== 
 # print(ecom[(ecom['CC Provider'] == 'American Express') & (ecom['Purchase Price'] > 95)].count())
 
 # Hard: How many people have a credit card that expires in 2025?
-print(sum(ecom['CC Exp Date'].apply(lambda x: '/25' in x)))
+# print(sum(ecom['CC Exp Date'].apply(lambda x: '/25' in x)))
+
+# Hard: What are the top 5 most popular email providers/hosts (e.g. gmail.com, yahoo.com, etc...)
+print(
+    ecom['Email'].apply(lambda x: x.split('@')[1]).value_counts().head()
+)
 
 
 
