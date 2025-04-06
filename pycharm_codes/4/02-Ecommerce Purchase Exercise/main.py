@@ -39,8 +39,10 @@ print("\n ===================================================================== 
 # print(ecom[ecom['Lot']=='90 WT']['Purchase Price'])
 
 # What is the email of the person with the following Credit Card Number: 4926535242672853
-print(ecom[ecom['Credit Card']==4926535242672853]['Email'])
+# print(ecom[ecom['Credit Card']==4926535242672853]['Email'])
 
+# How many people have American Express as their Credit Card Provider and made a purchase above $95 ?
+print(ecom[(ecom['CC Provider'] == 'American Express') & (ecom['Purchase Price'] > 95)].count())
 
 
 
