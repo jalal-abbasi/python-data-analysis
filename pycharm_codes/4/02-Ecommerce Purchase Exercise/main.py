@@ -35,7 +35,8 @@ print("\n ===================================================================== 
 # What are the 5 most common Job Titles?
 # print(ecom['Job'].value_counts().head(n=5))
 
-
+# Someone made a purchase that came from Lot: "90 WT" , what was the Purchase Price for this transaction?
+print(ecom[ecom['Lot']=='90 WT']['Purchase Price'])
 
 
 
