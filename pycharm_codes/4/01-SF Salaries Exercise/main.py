@@ -42,9 +42,6 @@ Ignore non-numeric columns (like strings) by default.
 Work only on columns that support the operation.
 '''
 
-
-
-
 # How many unique job titles are there?
 # print(salaries_dataframe['JobTitle'].nunique())
 
@@ -53,8 +50,21 @@ Work only on columns that support the operation.
 # print(salaries_dataframe['JobTitle'].value_counts().head())
 
 # How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)
-# job_titles_value_counts = salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts()
-# print(job_titles_value_counts[job_titles_value_counts==1].sum())
+job_titles_value_counts = salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts()
+print(job_titles_value_counts[job_titles_value_counts==1].sum())
+'''
+in my solution, sumn is a Series.sum().
+however, in the instructor's solution sum  is Python’s built-in sum() working on a boolean iterable. because we have  boolean Series like
+Clerk               False
+Firefighter         False
+Yoga Instructor      True
+Dog Catcher          True
+... (etc)
+True is treated as 1, and False as 0. So this adds up how many Trues — i.e., how many unique job titles.
+
+instructor's solution:
+sum(salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts() == 1) # pretty tricky way to do this...
+'''
 
 # How many people have the word Chief in their job title? (This is pretty tricky)
 # count=0
