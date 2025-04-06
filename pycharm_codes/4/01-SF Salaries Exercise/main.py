@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 from pandas.core.arrays.categorical import contains
 
-salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
+salaries_dataframe = pd.read_csv('Salaries.csv', low_memory=False)
+
 # head: shows the first n data. the default value is 5
 # print(salaries_dataframe.head().to_string())
 
@@ -32,6 +33,18 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # for year in range(2011,2015):
 #     print(f"{year}    {salaries_dataframe[salaries_dataframe['Year']==year]['BasePay'].mean()}")
 
+# I forgot to use the group-by method!
+'''
+print(salaries_dataframe.groupby('Year')['BasePay'].mean())
+note that: you cannot see the grouped table, because the output is an object. therefore you have to use
+Pandas’ aggregation functions like .sum() or .mean():
+Ignore non-numeric columns (like strings) by default.
+Work only on columns that support the operation.
+'''
+
+
+
+
 # How many unique job titles are there?
 # print(salaries_dataframe['JobTitle'].nunique())
 
@@ -56,5 +69,5 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # print(count)
 
 # Bonus: Is there a correlation between length of the Job Title string and Salary?
-corr_dataframe = pd.concat([salaries_dataframe['JobTitle'].apply(len).rename('title_len'), salaries_dataframe['TotalPayBenefits']],axis=1)
-print(corr_dataframe.corr())
+# corr_dataframe = pd.concat([salaries_dataframe['JobTitle'].apply(len).rename('title_len'), salaries_dataframe['TotalPayBenefits']],axis=1)
+# print(corr_dataframe.corr())
