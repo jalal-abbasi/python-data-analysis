@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)">
+    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="finishing and pushing">
+      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/05-Groupby.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/05-Groupby.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/06-Merging, Joining, and Concatenating.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/06-Merging, Joining, and Concatenating.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/04-Pandas-Exercises/02-SF Salaries Exercise - Solutions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/04-Pandas-Exercises/02-SF Salaries Exercise - Solutions.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +153,55 @@
       <option name="project" value="LOCAL" />
       <updated>1743940960435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Answering the question:&#10;Bonus: Is there a correlation between length of the Job Title string and Salary?">
+      <option name="closed" value="true" />
+      <created>1743948913792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743948913792</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding comments on me not using the groupby method.">
+      <option name="closed" value="true" />
+      <created>1743951311725</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743951311725</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding comments on difference between DataSeries.sum() functions and sum(BooleanValuedDataSeries)">
+      <option name="closed" value="true" />
+      <created>1743952034864</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743952034864</updated>
+    </task>
+    <task id="LOCAL-00011" summary="adding comments on lamda function and  apply() function.">
+      <option name="closed" value="true" />
+      <created>1743953090838</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743953090838</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adding comments on lamda function and apply() function.">
+      <option name="closed" value="true" />
+      <created>1743953108378</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743953108378</updated>
+    </task>
+    <task id="LOCAL-00013" summary="finishing and pushing">
+      <option name="closed" value="true" />
+      <created>1743955427655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743955427655</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +212,12 @@
     <MESSAGE value="Answering the question:&#10;What are the top 5 most common jobs?" />
     <MESSAGE value="Answering the question:&#10;How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)" />
     <MESSAGE value="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)" />
+    <MESSAGE value="Answering the question:&#10;Bonus: Is there a correlation between length of the Job Title string and Salary?" />
+    <MESSAGE value="adding comments on me not using the groupby method." />
+    <MESSAGE value="adding comments on difference between DataSeries.sum() functions and sum(BooleanValuedDataSeries)" />
+    <MESSAGE value="adding comments on lamda function and  apply() function." />
+    <MESSAGE value="adding comments on lamda function and apply() function." />
+    <MESSAGE value="finishing and pushing" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing and pushing" />
   </component>
 </project>
