@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from pandas.core.arrays.categorical import contains
 
 salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # head: shows the first n data. the default value is 5
@@ -39,5 +40,17 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # print(salaries_dataframe['JobTitle'].value_counts().head())
 
 # How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)
-job_titles_value_counts = salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts()
-print(job_titles_value_counts[job_titles_value_counts==1].sum())
+# job_titles_value_counts = salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_counts()
+# print(job_titles_value_counts[job_titles_value_counts==1].sum())
+
+# How many people have the word Chief in their job title? (This is pretty tricky)
+count=0
+def has_word_inside(cell):
+    global count
+    if 'Chief'.lower() in cell.lower():
+            count+=1
+    return count
+
+
+salaries_dataframe['JobTitle'].apply(has_word_inside)
+print(count)
