@@ -44,13 +44,17 @@ salaries_dataframe = pd.read_csv('Salaries.csv',low_memory=False)
 # print(job_titles_value_counts[job_titles_value_counts==1].sum())
 
 # How many people have the word Chief in their job title? (This is pretty tricky)
-count=0
-def has_word_inside(cell):
-    global count
-    if 'Chief'.lower() in cell.lower():
-            count+=1
-    return count
+# count=0
+# def has_word_inside(cell):
+#     global count
+#     if 'Chief'.lower() in cell.lower():
+#             count+=1
+#     return count
+#
+#
+# salaries_dataframe['JobTitle'].apply(has_word_inside)
+# print(count)
 
-
-salaries_dataframe['JobTitle'].apply(has_word_inside)
-print(count)
+# Bonus: Is there a correlation between length of the Job Title string and Salary?
+corr_dataframe = pd.concat([salaries_dataframe['JobTitle'].apply(len).rename('title_len'), salaries_dataframe['TotalPayBenefits']],axis=1)
+print(corr_dataframe.corr())

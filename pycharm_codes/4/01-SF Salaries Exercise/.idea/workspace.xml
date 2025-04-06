@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the question:&#10;How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)">
-      <change beforePath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/07-Operations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Refactored_Py_DS_ML_Bootcamp-master/03-Python-for-Data-Analysis-Pandas/07-Operations.ipynb" afterDir="false" />
+    <list default="true" id="ec7d22bb-c845-46d3-86eb-b2d5b19aee3a" name="Changes" comment="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -144,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743890338383</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)">
+      <option name="closed" value="true" />
+      <created>1743940960435</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743940960435</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +161,7 @@
     <MESSAGE value="Answering the questions:&#10;What was the average (mean) BasePay of all employees per year? (2011-2014)" />
     <MESSAGE value="Answering the question:&#10;What are the top 5 most common jobs?" />
     <MESSAGE value="Answering the question:&#10;How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Answering the question:&#10;How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)" />
+    <MESSAGE value="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Answering the question:&#10;How many people have the word Chief in their job title? (This is pretty tricky)" />
   </component>
 </project>
