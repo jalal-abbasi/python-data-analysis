@@ -5,7 +5,7 @@ from pandas import value_counts
 ecom = pd.read_csv('Ecommerce Purchases')
 
 # checking the head of the file
-# print(ecom.head().to_string())
+print(ecom.head().to_string())
 print("\n ===================================================================== \n")
 
 # how many rows and columns
@@ -24,8 +24,13 @@ print("\n ===================================================================== 
 # value_count: append a new column to the original dataframe and puts the number of time the same row has been repeated
 # print(ecom[ecom['Language']=='en'].count())
 
+# How many people have the job title of "Lawyer" ?
+# info() is very similar to count(), but it also gives more information on each data type
+# print(ecom[ecom['Job']=='Lawyer'].info())
 
 
+# How many people made the purchase during the AM and how many people made the purchase during PM ?
+print(ecom['AM or PM'].value_counts())
 
 
 
