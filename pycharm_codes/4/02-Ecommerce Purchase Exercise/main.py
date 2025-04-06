@@ -30,7 +30,13 @@ print("\n ===================================================================== 
 
 
 # How many people made the purchase during the AM and how many people made the purchase during PM ?
-print(ecom['AM or PM'].value_counts())
+# print(ecom['AM or PM'].value_counts())
+
+# What are the 5 most common Job Titles?
+# print(ecom['Job'].value_counts().head(n=5))
+
+
+
 
 
 
