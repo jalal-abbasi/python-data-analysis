@@ -67,17 +67,43 @@ sum(salaries_dataframe[salaries_dataframe['Year']==2013]['JobTitle'].value_count
 '''
 
 # How many people have the word Chief in their job title? (This is pretty tricky)
-# count=0
-# def has_word_inside(cell):
-#     global count
-#     if 'Chief'.lower() in cell.lower():
-#             count+=1
-#     return count
-#
-#
-# salaries_dataframe['JobTitle'].apply(has_word_inside)
-# print(count)
+count=0
+def has_word_inside(cell):
+    global count
+    if 'Chief'.lower() in cell.lower():
+            count+=1
+    return count
 
+
+salaries_dataframe['JobTitle'].apply(has_word_inside)
+print(count)
+
+
+'''
+why code is not a good practice!!This is not considered good practice, because .apply() is meant to return a new Series — not modify global state.
+
+instructor's code:
+def chief_string(title):
+    if 'chief' in title.lower():
+        return True
+    else:
+        return False
+        
+sum(salaries_dataframe['JobTitle'].apply(lambda x: chief_string(x)))
+lambda function here means:  For every x (i.e., job title) in the column, run chief_string(x)
+
+keep in mind:
+lambda arguments: expression
+is equivalent to
+def some_function(arguments):
+    return expression
+
+so in lamda (anonymous) function, we omit 'def', 'function_name' and 'return' keywords.
+
+the instructor misused the usage of lambda! we would need it if chief_string() function, needed another argument other than the cell
+contentent itself. for example:
+sum(salaries_dataframe['JobTitle'].apply(lambda x: chief_string(x, 'chief')))
+'''
 # Bonus: Is there a correlation between length of the Job Title string and Salary?
 # corr_dataframe = pd.concat([salaries_dataframe['JobTitle'].apply(len).rename('title_len'), salaries_dataframe['TotalPayBenefits']],axis=1)
 # print(corr_dataframe.corr())
