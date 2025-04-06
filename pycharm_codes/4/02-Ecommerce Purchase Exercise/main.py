@@ -1,3 +1,5 @@
+from re import split
+
 import pandas as pd
 from pandas import value_counts
 
@@ -42,7 +44,11 @@ print("\n ===================================================================== 
 # print(ecom[ecom['Credit Card']==4926535242672853]['Email'])
 
 # How many people have American Express as their Credit Card Provider and made a purchase above $95 ?
-print(ecom[(ecom['CC Provider'] == 'American Express') & (ecom['Purchase Price'] > 95)].count())
+# print(ecom[(ecom['CC Provider'] == 'American Express') & (ecom['Purchase Price'] > 95)].count())
+
+# Hard: How many people have a credit card that expires in 2025?
+print(sum(ecom['CC Exp Date'].apply(lambda x: '/25' in x)))
+
 
 
 
